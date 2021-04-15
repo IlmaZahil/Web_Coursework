@@ -1,5 +1,3 @@
-# Web_Coursework
-
 <h1 align="center"> Web Design Coursework 🔥 </h1>
 
 # Contributors ✨
