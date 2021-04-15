@@ -1,0 +1,189 @@
+/* W1790405 - Fathima Ilma Zahil  20192113*/
+
+*{
+	margin:0;
+}
+
+/* global class */
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* -----x--main grid--x----- */
+
+/* -------header-------*/
+#myHeader {
+	background:linear-gradient(110deg,  #FFFFFF  0%, #b3b3ff 80%);
+	height: 110px;
+	margin: 0;
+	width: 100%;
+	top: 0;
+}
+
+/* adding styles to the logo */
+#logo {
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 7.5px;
+	float: left;
+}
+.navMenu {
+	color: white;
+	text-align: center;
+	display: inline;
+	overflow: hidden;
+}
+
+/* social media icons in the navigation bar */
+.socialmedia1 {
+	float:right;
+	margin: 40px 30px 5px 0px; /* top right bottom left */
+	font-size:27px;
+}
+
+.socialmedia1 i:hover {
+	color: #476b6b;
+}
+
+ul {
+	list-style-type: none;
+}
+
+ul.p {
+	list-style-type: circle;
+}
+
+li.p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	text-indent: 20px;
+	margin-top: 1em;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+/* adding styles to navigation bar buttons */
+.navButton {
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	float: left;
+	background-color: rgb(255, 255, 255, 0.9);
+	color: black;
+	cursor:pointer;
+	font-size: 14px;
+	font-family:Arial, Helvetica, sans-serif; 
+	transition-duration: 0.4s;
+	width: 122px;
+	margin: 34px 10px 5px;	
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+/*adding hover effect to navigation bar buttons */
+.navButton:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background-color: #b3e6ff;
+}
+
+/* adding extra width to 'responsible travel' button */
+#navButtonTravel {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	width: 200px;
+}
+/* -----x--header--x-----*/
+
+
+/* -------intro and image------- */
+.intro {
+	height:900px;
+	width: 600px;
+	padding: 10px;
+	margin:auto;
+	margin-top:40px;
+}
+
+.desc {
+	height:450px;
+	width:600px;
+	margin-top: 20px;
+}
+
+.img{
+	height:450px;
+	width:400px;
+	padding-left:150px;
+	margin-top: 1em;
+}
+
+.ul {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	text-indent: 20px;
+	margin-top: 2em;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 2;
+	list-style-type:square;
+}
+
+/* ------footer------- */
+#footer {
+	background-color: rgb(153, 153, 255, 0.8);
+	height: 100px;
+	width: 100%;
+	margin-bottom: 0px;
+}
+
+#copyright {
+	font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: auto;
+	margin-top: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	margin-left: 500px;
+	padding: 10px;
+}
+
+.footerButtons {
+	height:60px;
+	width:380px;
+	margin: auto;
+}
+.footerButton {
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	float: left;
+	background-color: none;
+	color: black;
+	cursor:pointer;
+	font-size: 10px;
+	font-family:Arial, Helvetica, sans-serif; 
+	transition-duration: 0.4s;
+	width: 100px;
+	margin: 20px 10px 5px;	/* top right bottom left */
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+
+.footerButton:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #99ffcc;
+	color: white;
+}
+/* -----x--footer --x----- */

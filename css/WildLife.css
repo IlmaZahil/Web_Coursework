@@ -1,0 +1,227 @@
+/*---W1790405 Fathima Ilma Zahil 20191153---*/
+
+/* global class */
+a {
+	text-decoration: none;
+	color: black;
+}
+
+*{
+	margin:0;
+}
+
+
+
+/* -------header-------*/
+#myHeader {
+	background:linear-gradient(110deg,  #FFFFFF  0%, #b3d9ff 90%);
+	height: 110px;
+	margin: 0;
+	width: 100%;
+	top: 0;
+}
+
+#logo {
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 24px;
+	margin-left: 30px;
+	float: left;
+	margin-right: 100px;
+	font-size: 40px;
+}
+
+.navMenu {
+	color: white;
+	text-align: center;
+	display: inline;
+	overflow: hidden;
+}
+
+/* social media icons in the navigation bar */
+.socialmedia1 {
+	float:right;
+	margin: 40px 30px 5px 0px; /* top right bottom left */
+}
+
+.socialmedia1 i:hover {
+	color: #476b6b;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* adding styles to navigation bar buttons */
+.navButton {
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	float: left;
+	background-color: rgb(255, 255, 255, 0.9);
+	color: black;
+	cursor:pointer;
+	font-size: 14px;
+	font-family:Arial, Helvetica, sans-serif; 
+	transition-duration: 0.4s;
+	width: 122px;
+	margin: 34px 10px 5px;	
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+/*adding hover effect to navigation bar buttons */
+.navButton:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background-color: #99ff99;
+}
+
+/* adding extra width to 'responsible travel' button */
+#navButtonTravel {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	width: 200px;
+}
+
+#navButtonLength {
+	width: 150px;
+}
+
+
+
+/* -----x--header--x-----*/
+
+
+
+.h1{
+	text-align:center;
+	}
+			
+
+#main {
+	
+	width: 1400px;
+	margin: 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	background:linear-gradient(110deg, #c6ffb3 0%, #FFFFFF  50%, #ffffb3 90%); /* main background gradient */
+}
+
+
+/*----image----*/
+.img{
+	width:350px;
+	height:250px;
+	padding-left:375px;
+	padding-top:25px;
+	}
+	
+.pics{
+	width:400px;
+	height:250px;
+	padding-left:15px;
+	padding-top:25px;
+	float:left;
+	}
+			
+.bird{
+	width:250px;
+	height:350px;
+	padding:50px 25px 0px 50px;
+	float:left;
+	}
+	
+#ele{
+	width:1000px;
+	height:450px;
+	padding-left:50px;
+	padding-top:25px;
+	
+	}
+
+.div {
+	font-family: Arial, Helvetica,sans-serif;
+	
+	overflow: auto;
+	border-radius:10px;
+	width:1100px;	
+	height:560px;
+	margin:25px 10px 25px 75px;				
+	}
+
+.div1 {
+	font-family: Arial, Helvetica,sans-serif;	
+	overflow: auto;
+	border-radius:10px;
+	width:1200px;	
+	height:500px;
+	margin:50px 10px 25px 75px;				
+	}
+			
+
+/*----paragraph----*/
+p{
+	font-family: Arial, Helvetica,sans-serif;
+	padding-left:10px;
+	padding-right:20px;
+	text-indent:20px;
+	line-height:30px;
+	text-align:center;
+	}
+		
+
+/* ------footer------- */
+#footer {
+	grid-area: footer;
+	background-color: rgb(133, 224, 133, 2);
+	height: 100px;
+	margin-top: 40px;
+}
+
+
+#copyright {
+	font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: auto;
+	margin-left: 500px;
+	padding: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+.footerButtons {
+	height:60px;
+	padding:2px;
+	width:380px;
+	margin: auto;
+}
+.footerButton {
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	float: left;
+	background-color: none;
+	color: black;
+	cursor:pointer;
+	font-size: 10px;
+	font-family:Arial, Helvetica, sans-serif; 
+	transition-duration: 0.4s;
+	width: 100px;
+	margin: 20px 10px 5px;	/* top right bottom left */
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+
+.footerButton:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #99ffcc;
+	color: white;
+}
+/* -----x--footer --x----- */
+	

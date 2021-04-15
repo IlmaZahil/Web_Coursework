@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Quiz</title>
+			
+		<!-- reference kit for font awesome icons from w3schools -->
+		<!-- link: https://www.w3schools.com/css/css_icons.asp -->
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		
+		<link rel="stylesheet" href="css\Quiz.css" type="text/css">
+		
+	</head>
+	<body>
+		<!-- header -->
+		<div class="header" id="myHeader">
+			<!-- logo -->
+			<div id="logo"><a href="MainPage.html"> <img src="css/logoluvceylon2.png" style="width=:1100px;height:50px;"></a> </div>
+			<!-- navigation bar -->
+			<div id="nav">
+			<!-- navigation menu -->
+			<div class="navMenu">
+				<ul>
+				<li class="nav"> <a href="MainPage.html"> <button class="navButton"> Home </a></li></button>
+				<li class="nav"> <a href="ViewImages.html"> <button class="navButton"> Gallery </a></li></button>
+				<li class="nav"><a href="ResponsibleTravel.html"> <button id="navButtonTravel" class="navButton"> Responsible travel  </a></li></button> 
+				<li class="nav"> <a href="StudentDetails.html"><button class="navButton"> About Us </a></li></button>
+				<li class="nav"> <a href="PageEditorIlma.html"><button id="navButtonLength" class="navButton"> Page Editor </a></li></button>
+				</ul>
+			</div>
+			<!-- social media button icons -->
+			<div class="socialmedia1">
+				<a href="#"><i class="fab fa-facebook-f"></i> </a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i> </a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+			</div>
+			</div>
+			</div>
+		
+		<div class="container">
+			<div>
+				<h2>Quiz</h2>
+			</div>
+			<h4 class="timer" align = "left" ><span id='time-left' style="font-size:20px;" style="font-size:20px;"></span></h4>
+			<div id="quiz"></div>
+			<div id="corrector"></div>
+			<button id="submit" >Submit Quiz</button>
+			<button onclick="reset()">Reset</button>
+			<div class= "results" id="color" > Your Score is <span id="results"></span></div>
+		</div>
+
+		
+		<!-- footer -->
+		<div id="footer"> <div id="copyright">Copyright <i class="far fa-copyright"></i> 2020 LUV CEYLON. All Rights Reserved </div>
+			<div class="footerButtons">
+			<a href="MainPage.html"> <button class="footerButton"> Home </a></button>
+			<a href="ViewImages.html"> <button class="footerButton"> About Us </a></button>
+			<a href="Sitemap.html"> <button class="footerButton"> Site map </a></button>
+			</div>
+		</div>
+<script src="Quiz.js"></script>
+<script>function reset() {
+	localStorage.clear();
+	location.replace("Quiz.html")
+}
+		</script>		
+	</body>
+</html>

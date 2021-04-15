@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- defines a description for the main page -->
+	<meta name="description" content="Tourism">
+	<!-- defines keywords for search engines -->
+	<meta name="keywords" content="Sri Lanka, travel">
+	<!-- defines the authors for the main web page -->
+	<meta name="author" content="Thisura- w1761007">
+	<!-- adjusting to device width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- external stylesheet -->
+	<link rel="stylesheet" href="css\viewimages.css" type="text/css">
+
+	<!-- reference kit for font awesome icons from w3schools -->
+	<!-- link: https://www.w3schools.com/css/css_icons.asp -->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	
+	<!-- Title -->
+	<title> Viewing Images</title>
+</head>
+
+<body>
+
+	<!-- header -->
+			<div class="header" id="myHeader">
+	<!-- logo -->
+			<div id="logo"> <a href="MainPage.html"> <img src="css/logoluvceylon2.png" style="width=:1100px;height:50px;"></a> 
+			</div>
+		<!-- navigation bar -->
+			<div id="nav">
+		<!-- navigation menu -->
+			<div class="navMenu">
+				<ul>
+				<li class="nav"> <a href="MainPage.html"> <button class="navButton"> Home </a></li></button>
+				<li class="nav"> <a href="viewimages.html"> <button class="navButton"> Gallery </a></li></button>
+				<li class="nav"><a href="ResponsibleTravel.html"> <button id="navButtonTravel" class="navButton"> Responsible travel  </a></li></button> 
+				<li class="nav"> <a href="#"><button class="navButton"> About Us </a></li></button>
+				<li class="nav"> <a href="PageEditorThisura.html"><button id="navButtonLength1" class="navButton"> Page Editor </a></li></button>
+				</ul>
+			</div>
+			<!-- social media button icons -->
+			<div class="socialmedia1">
+				<a href="#"><i class="fab fa-facebook-f"></i> </a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i> </a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+			</div>
+			
+			</div>
+			</div>
+		
+		<h1 id="color">Viewing Images</h1>
+		<label for="bgcolor">Background color: </label>
+			<select name="bgcolor" id="bgcolor">
+				<option value="white">White</option>
+				<option value="grey">Grey</option>
+				<option value="yellow">Yellow</option>
+			</select>
+		<label for="txtcolor">Page text color: </label>
+			<select name="txtcolor" id="txtcolor">
+				<option value="black">Black</option>
+				<option value="white">White</option>
+				<option value="yellow">Yellow</option>
+			</select><br>
+		
+		<img src="images/lotus.jpg" alt="lotus tower" id="lotus" width="150">
+		<img src="images/kandy.jpg" alt="Kandy perahara performance" id="kandy" width="150">
+		<img src="images/kandytown.jpg" alt="Picture of Kandy Town" id="town" width="150">
+		<img src="images/elephant.jpg" alt="Picture of elephants" id="elephant" width="150">
+		<img src="images/bridge.jpg" alt="Picture of nine arch bridge" id="bridge" width="150">
+		<br><br>
+		
+	
+		<img src="" id="bigimage" width="400"><span id="description"></span>
+			
+
+	
+	<!-- footer -->
+		<div id="footer"> <div id="copyright">Copyright <i class="far fa-copyright"></i> 2020 LUV CEYLON. All Rights Reserved </div>
+			<div class="footerButtons">
+			<a href="MainPage.html"> <button class="footerButton"> Home </a></button>
+			<a href="#"> <button class="footerButton"> About Us </a></button>
+			<a href="#"> <button class="footerButton"> Site map </a></button>
+			</div>
+		</div>
+	</div>
+	</body>
+	
+	<script>
+	function getSelectedValue(selectList){
+		return selectList[selectList.selectedIndex].value;
+	}
+	document.getElementById("lotus").addEventListener("mouseover", function(){
+		document.getElementById("bigimage").src="Images/lotus.jpg";
+		document.getElementById("description").innerHTML="This the lotus tower situated in colombo";
+	});
+	document.getElementById("kandy").addEventListener("mouseover", function(){
+		document.getElementById("bigimage").src="Images/kandy.jpg";
+		document.getElementById("description").innerHTML="This is an ongoing performance of the kandy perahera";
+	});
+	document.getElementById("town").addEventListener("mouseover", function(){
+		document.getElementById("bigimage").src="Images/kandytown.jpg";
+		document.getElementById("description").innerHTML="A famous landmark in kandy";
+	});
+	document.getElementById("elephant").addEventListener("mouseover", function(){
+		document.getElementById("bigimage").src="Images/elephant.jpg";
+		document.getElementById("description").innerHTML="Elephants spotted in Dambulla area";
+	});
+	document.getElementById("bridge").addEventListener("mouseover", function(){
+		document.getElementById("bigimage").src="Images/bridge.jpg";
+		document.getElementById("description").innerHTML="Nine arch bridge in Sri Lanka";
+	});
+	
+	document.getElementById("bgcolor").addEventListener("change",function(){
+		document.getElementById("web").style.backgroundColor=getSelectedValue(this);
+	});
+	
+	
+	document.getElementById("txtcolor").addEventListener("change",function(){
+		document.getElementById("color").style.color=getSelectedValue(this);
+	});
+	</script>
+</html>
+	

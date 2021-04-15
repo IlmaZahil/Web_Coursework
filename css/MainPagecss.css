@@ -1,0 +1,553 @@
+/* w1790017 -Nisandi Jayasuriya */
+
+*{
+	margin:0;
+}
+
+/* global class */
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* -------main grid------- */
+.grid-container{
+	display: grid;
+	grid-template-areas:
+	'image image image image image image'
+	'section section section section section section'
+	'footer footer footer footer footer footer';
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 6fr));
+	/* height adjustments for grid areas */
+	grid-template-rows:1000px auto 100px;
+}
+
+.grid-container > div {
+	text-align: center;
+	font-size: 30px;
+	margin: 0;
+}
+
+/* -----x--main grid--x----- */
+
+/* -------header-------*/
+#myHeader {
+	background:linear-gradient(110deg,  #FFFFFF  0%, #b3d9ff 90%);
+	height: 110px;
+	margin: 0;
+	width: 100%;
+	top: 0;
+}
+
+#logo {
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 24px;
+	margin-left: 30px;
+	float: left;
+	margin-right: 100px;
+	font-size: 40px;
+}
+
+.navMenu {
+	color: white;
+	text-align: center;
+	display: inline;
+	overflow: hidden;
+}
+
+/* social media icons in the navigation bar */
+.socialmedia1 {
+	float:right;
+	margin: 40px 30px 5px 0px; /* top right bottom left */
+}
+
+.socialmedia1 i:hover {
+	color: #476b6b;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* adding styles to navigation bar buttons */
+.navButton {
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	float: left;
+	background-color: rgb(255, 255, 255, 0.9);
+	color: black;
+	cursor:pointer;
+	font-size: 14px;
+	font-family:Arial, Helvetica, sans-serif; 
+	transition-duration: 0.4s;
+	width: 122px;
+	margin: 34px 10px 5px;	
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+/*adding hover effect to navigation bar buttons */
+.navButton:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background-color: #99ff99;
+}
+
+/* adding extra width to 'responsible travel' button */
+#navButtonTravel {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	width: 200px;
+}
+/* -----x--header--x-----*/
+
+/* -------slideshow-------*/
+#image {
+	grid-area: image;
+	position:relative;
+	height: 1000px;
+	margin-top:0px;
+	width:100%;
+}
+
+.mySlides {
+	display: none;
+	margin: 0px;
+}
+/* previous and next buttons to navigate through slides */
+.prev, .next {
+	position: absolute;
+	top: 35%;
+	color: white;
+	font-size:50px;
+	font-weight:bold;
+	
+	width: auto;
+	padding: 16px;
+	cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+	color: #ffdd99;
+}
+
+.prev {
+	left: 0;
+}
+/* positioning next button to the right */
+.next {
+	right: 0;
+}
+/* -----x--slideshow--x-----*/
+
+/* -------main area-------*/
+/* css for the main five topics */
+#main {
+	height: 300px;
+	position: absolute;
+	top: 600px;
+	left: 148px;
+	margin: 40px;
+}
+
+/* label to select a destination */
+.label {
+	color: #ccffff;
+	height:50px;
+	font-size: 40px;
+	font-weight: bold;
+	background-color: rgb(0, 0, 0, .7);
+	border-radius:4px;
+}
+
+/* adding styles to the topic buttons */
+.topics {
+	height: 200px;
+	width:190px;
+	margin: 15px;
+	float: left;
+	color:#000066;
+	cursor:pointer;
+	transition-duration: 0.4s;
+	font-size: 25px;
+	font-family:Arial, Helvetica, sans-serif; 
+	border: none;
+	font-weight: bold;
+	border-radius: 15px;
+	background-color: rgb(0, 204, 153, 0.5);
+}
+
+.topics:hover {
+	background-color: rgb(0, 102, 153, .8);
+	color: #ffffff;
+}
+/* -----x--main area--x-----*/
+
+
+/* -------sections-------*/
+#section {
+	grid-area: section;
+}
+	
+.content {
+	background:linear-gradient(110deg, #b3d9ff 0%, #ce99ff 50%, #b3d9ff 90%);
+	margin: auto;
+	width:1370px;
+	margin-top:30px;
+	padding:10px;
+}
+
+/* add styles to the sections */
+/* -------section1-------*/
+.intro {
+	width:1385px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background:linear-gradient(110deg, #b3d9ff 0%, #FFFFFF  30%, #b3d9ff 90%);
+	margin:auto;
+}
+
+#lifeStyle1 {
+	width: 80%;
+	margin: auto;
+	padding-top:24px;
+	padding-left:130px;
+	padding-right:90px;
+	margin-top: 50px;
+}
+
+#lifeStyle2 {
+	width: 80%;
+	padding:40px;
+	padding-left:130px;
+	padding-right:90px;
+	top: 150px;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	text-indent: 20px;
+	margin-top: 1em;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	margin:30px;
+	letter-spacing: 2px;
+}
+
+#lifeStyleImg1 {
+	top: 600px;
+	padding: 15px;
+}
+
+.lifeStyleImg2 {
+	width: 650px;
+	margin:20px; 
+	float: left;
+}
+
+.lifeStyleImg3 {
+	width: 420px;
+	margin:20px; 
+	float: left;
+}
+
+.lifeStyleImg4 {
+	padding: 20px;
+}
+
+/* -----x--section1--x-----*/
+
+/* -------section2-------*/
+#section2 {
+	
+	width: 50%;
+	margin:auto;
+	
+}
+
+/* -----x--section2--x-----*/
+
+
+/* -------section3-------*/
+#section3 {
+	width:55%;
+	padding: 50px;
+	margin-left: 245px;
+	border-radius: 5px;
+	margin:auto;
+}
+
+
+#quiz {
+	width:190px;
+	margin: auto;
+	color:#000066;
+	cursor:pointer;
+	transition-duration: 0.4s;
+	font-size: 25px;
+	font-family:Arial, Helvetica, sans-serif; 
+	border: none;
+	font-weight: bold;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+#quiz:hover {
+	background-color: rgb(0, 102, 153, .8);
+	color: white;
+}
+
+#id {
+	margin:0;
+}
+
+/* -----x--section3---x----*/
+
+/* -------section4-------*/
+
+#section4 {
+	width:40%;
+	padding: 50px;
+	margin-left: 360px;
+	border-radius: 5px;
+	margin:auto;
+}
+
+input[type=text],input[type=email], textarea {
+	width:80%;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-sizing: border-box;
+	resize: vertical;
+	float: right;
+	text-align: left;
+	margin-top:5px;
+}
+
+input[type=text]:hover {
+	background-color: rgb(255, 255, 179, 0.8);
+}
+
+input[type=email]:hover {
+	background-color: rgb(255, 255, 179, 0.8);
+}
+
+textarea:hover {
+	background-color: rgb(255, 255, 179, 0.8);
+}
+
+label {
+	display: inline-block;
+	font-size: 12px;
+	padding: 12px 10px 10px 0;
+	font-family: "Lucida Console", Courier, monospace;
+	float: left;
+	margin-top: 5px;
+}
+
+
+input[type=submit] {
+	width=15%;
+	background-color: #d0e1e1;
+	color: black;
+	padding: 10px 10px;
+	margin:auto;
+	margin-left: 450px;
+	border-radius:3px;
+	cursor: pointer;
+	border: 1px solid #ccc;
+}
+
+input[type=submit]:hover {
+	background-color: white;
+}
+
+.socialmedia2 {
+	margin: auto; /* top right bottom left */
+	margin-bottom:5px;
+}
+
+.socialmedia2 i:hover {
+	color: #476b6b;
+}
+
+#like:hover {
+	color: red;
+}
+
+.rating{
+	margin-top: 40px;
+	margin-left: 10px;	
+}
+
+#rating1, #rating2, #rating3, #rating4, #like {
+	width: 10px;
+	height:30px;
+	align: ceter;
+	margin-right: 20px; 	
+}
+
+#rating1:hover {
+	color: #ff0000;
+}
+
+#rating2:hover {
+	color: #ff471a;
+}
+
+#rating3:hover {
+	color: #ff9933;
+}
+
+#rating4:hover {
+	color: #ffff00;
+}
+
+.followUs {
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 25px;
+	letter-spacing: 1px;
+	font-weight:bold;
+}
+
+input[type=radio] {
+	float: left;
+	margin-left:100px;
+}
+
+.ratingButtons {
+	font-size: 12px;
+	padding: 12px 10px 10px 0;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 20px;
+	height:90px;
+	width:200px;
+	margin-left: 140px;
+	letter-spacing: 1px;
+}
+
+.rateUs {
+	margin-top: 25px;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+	font-weight:bold;
+}
+
+fieldset {
+	border:1px solid black;
+}
+
+legend {
+	font-size: 15px;
+	font-family: "Lucida Console", Courier, monospace;
+}
+
+/* -----x--section4--x-----*/
+/* -----x--sections--x-----*/
+
+/* ------footer------- */
+#footer {
+	grid-area: footer;
+	background-color: rgb(179, 217, 255, 2);
+}
+
+#copyright {
+	font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: auto;
+	margin-top: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+.footerButtons {
+	height:60px;
+	padding:2px;
+	width:380px;
+	margin: auto;
+}
+.footerButton {
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	float: left;
+	background-color: none;
+	color: black;
+	cursor:pointer;
+	font-size: 10px;
+	font-family:Arial, Helvetica, sans-serif; 
+	transition-duration: 0.4s;
+	width: 100px;
+	margin: 20px 10px 5px;	/* top right bottom left */
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.footerButton:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #99ffcc;
+	color: white;
+}
+/* -----x--footer --x----- */
+
+/* font size increase */
+
+#font{
+	background-color: rgb(204, 204, 255, 0.4);
+	width:250px;
+	padding:15px;
+	margin-left:75%;
+	border-radius: 5px;
+	
+}
+
+#fontlabel{
+	font-size:20px;
+}
+
+.font-button {
+	background-color: rgb(0, 204, 153, 0.5);
+	border-style: 0.5px solid black;
+	padding: 6px;
+}
+
+.font-button:hover {
+	background-color: rgb(179, 230, 255, 0.5);
+}
+
+#Productimg{
+	width:500px;
+	height:300px;
+}
+
+#Product{
+		padding:10px;
+	  font-size:18px;
+	  border:2px solid #222;
+	  color:#222;
+	  text-transform:uppercase;
+	  font-weight:600;
+	  background:#fff;
+}
+
+
+
+

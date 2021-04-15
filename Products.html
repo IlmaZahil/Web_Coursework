@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Souvenirs and Ceylon products</title>
+			<link rel="stylesheet" href="css/Products.css">
+			<script src="javascript/Products.js"></script>	
+		</head>
+		<body>
+		<div>
+		
+			<fieldset id="Form">
+				<Legend>Shop Souvenirs and Ceylon products</legend>
+				<section id="sec1">
+					<label class="details">First Name</label> 
+					<input type="text" class="nameIN" placeholder="First Name" id="fname"> <br><br>
+					
+					<label class="details">Last Name</label> 
+					<input type="text" class="nameIN" placeholder="Last Name" id="lname"> <br><br>
+				</section>
+				<h3>Products</h3>
+				<section id="items">
+				<h3>Painting of Temple of the Sacred Tooth Relic: </h3>
+						<input type="checkbox" id="p1" onclick="q1()"><br><br>
+						<img src="images/dalada maligawa.jpg" alt="Temple of the Sacred Tooth Relic" class="pIMG">
+						<h4>Price : Rs.3000.00</h4>
+						<input type="number" id="p1q" style="display:none" placeholder="Quantity">
+						<br>
+				<h3>Painting of Sigiriya:</h3>
+						<input type="checkbox" id="p2" onclick="q2()"><br><br>
+						<img src="images/sigiriya.jpg" alt="Sigiriya" class="pIMG">
+						<h4>Price : Rs.3500.00</h4>
+						<input type="number" id="p2q" style="display:none" placeholder="Quantity">
+						<br>
+				<h3>Wooden Elephant Statue: </h3>
+						<input type="checkbox" id="p3" onclick="q3()"><br><br>
+						<img src="images/elephant.jpg" alt="Wooden elephant" class="pIMG">
+						<h4>Price : Rs.4500.00</h4>						
+						<input type="number" id="p3q" style="display:none" placeholder="Quantity">	
+						<br> 
+				<h3>Ceylon tea</h3>
+						<input type="checkbox" id="p4" onclick="q4()"><br><br>
+						<img src="images/ceylontea.jpg" class="pIMG">					
+						<h4>Price : Rs.450.00</h4>
+						<input type="number" id="p4q" style="display:none" placeholder="Quantity">	
+						<br> 
+				</section>		
+				<button id="buy" onclick="summary()">Purchase</button>
+			
+				<br><br>
+				<div id="Summary">
+				<h2 id="response"><h2>				
+				<h4 id="Prod1"></h4>
+				<h4 id="Prod2"></h4>
+				<h4 id="Prod3"></h4>
+				<h4 id="Prod4"></h4>
+				<h3 id="Total"></h3>
+				</div>
+			</fieldset>					
+		<div>
+		</body>
+	</html>

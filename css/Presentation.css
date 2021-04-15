@@ -1,0 +1,30 @@
+body{
+	background-image:url("bg.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	}
+
+#details{
+	background:linear-gradient(140deg,#b3d9ff 0%,#00cc99 65%);
+	width:55%;
+	border: 3px solid Black;			
+	margin: auto;
+	margin-top:4%;						
+		}	
+		
+#topic{				
+	text-align:center;				
+	font-size:60px;
+	}
+	
+dl{
+	margin-left:15%;
+	}
+	
+dt{
+	font-size:35px;
+	}	
+	
+dd{
+	font-size:25px;
+	}		

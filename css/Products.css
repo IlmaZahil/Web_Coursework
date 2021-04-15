@@ -1,0 +1,65 @@
+body{
+	background-image:url("tea estate.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	}
+	
+#Form{
+	background:linear-gradient(110deg, #b3d9ff 0%, #FFFFFF  30%, #b3d9ff 90%);
+	width:70%;
+	margin:auto;
+	margin-top:5%;
+}
+
+p1q,p2q,p3q{
+	display:none
+	}
+	
+.pIMG{
+	width:275px;
+	height:175px;
+}
+
+#items{
+	margin-left:15%;
+}
+
+#buy{
+	padding:5px;
+	 font-size:18px;
+	 border:2px solid #222;
+	 color:#222;
+	 text-transform:uppercase;
+	 font-weight:600;
+	 background:#fff;
+	 margin-left :5%
+	 cursor:pointer;
+}
+
+legend{
+	Font-size:30px;
+	font-weight:bold;
+}
+
+.nameIN{
+	Width:60%;
+	height:30px;
+	padding:5px;
+}
+
+fieldset {
+	border:3px solid black;
+}
+
+.details{
+	font-size:20px;
+	font-weight:bold;
+}
+
+#sec1{
+	margin-top:30px;
+}
+
+
+
+
