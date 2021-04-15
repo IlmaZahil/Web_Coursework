@@ -4,7 +4,7 @@
 
 # Contributors ✨
 
-<b> Ilma Zahil</b>
-<b>Nisandi Jayasooriya</b>
-<b> Santhus </b>
+<b> Ilma Zahil</b><br/>
+<b>Nisandi Jayasooriya</b><br/>
+<b> Santhus </b><br/>
 <b> Thisura Yapa </b>
